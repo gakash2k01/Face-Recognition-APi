@@ -68,6 +68,9 @@ def predict():
     im_b64 = base64.b64encode(im_bytes)
     result={'name':fin_name,'place':place,'branch':branch,'image':str(im_b64),'year':year,'studying':studying}
 
+    im_b64 = base64.b64encode(im_bytes)
+    result={'name':fin_name,'place':place,'branch':branch,'image':str(im_b64),'year':year,'studying':studying}
+
     return jsonify(result)
 
 
